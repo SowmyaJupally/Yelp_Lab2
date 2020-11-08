@@ -35,7 +35,15 @@ class Events extends Component{
 
 
         this.setState({
-            events:[{event_location:"San Jose",event_name:"Event 1", event_description:"Evewnt 1"}]
+            events:[{event_location:"San Jose",event_name:"The Whisk", event_description:"Come and Learn new baking techniques",event_date:" 12th December 2024."},
+            {event_location:"San Jose",event_name:"Food and Drinks", event_description:"Drinks with new menu",event_date:" July 1 2019"},
+            {event_location:"San Jose",event_name:"Yoga", event_description:"Kids yoga under age 10",event_date:" Aug 16 2019"},
+            {event_location:"San Jose",event_name:"Pizzeria", event_description:"Come and try new pizza's",event_date:" Aug 21 2019"},
+            {event_location:"Phoenix",event_name:"Food and Drinks", event_description:"Drinks with new menu",event_date:" July 1 2019"},
+            {event_location:"Maryland",event_name:"Yoga", event_description:"Kids yoga under age 10",event_date:" Aug 16 2019"},
+            {event_location:"Fredrick",event_name:"Pizzeria", event_description:"Come and try new pizza's",event_date:" Aug 21 2019"}
+        
+        ]
         })
         // axios.get(`${hostAddress}/getevents/`)
         // .then((response)=>{
@@ -88,22 +96,12 @@ class Events extends Component{
         }
             var details = this.state.events.map((event)=>{
                 return(
-                <div>
+                <div style = {{backgroundImage:`url(./download.jpeg) !important`}}>
                 <React.Fragment>
                 <nav class="navbar navbar-light bg-light">
                 <form class="form-inline">
                 <a class="logo-link" href="/home"></a>
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
-                    <button
-                        style={{
-                            width: '15%',
-                            opacity: '1.0',
-                                backgroundColor: 'red',
-                                }}
-                            type='button'
-                            className='btn'>
-                            <i className='fas fa-search'></i>
-                    </button>
+                
             
                 </form>
                 </nav>
@@ -112,8 +110,8 @@ class Events extends Component{
                 <div class="card">
                 <img class="card-img-top" src={event.event_image} class = "float-left"/>
                 <div class='card-body'>
-                <h5 class="card-title" class="font-weight-bold">{event.event_name}</h5>
-                <p class="card-text"> {event.event_description}</p>
+                <h5 class="card-title" class="font-weight-bold" style ={{color:"white"}}>{event.event_name}</h5>
+                <p class="font-weight-bold" style ={{color:"white"}}> {event.event_description}</p>
                 <form class="form-inline">
                 <button
                 style={{
@@ -124,9 +122,9 @@ class Events extends Component{
                         }}
                     type='button'
                     className='btn'>
-                    <i className='fas fa-map-marker-alt'></i>
+                    
                 </button>
-                <p class="card-text">  {event.event_location}</p></form>
+                <p class="card-text" style ={{color:"white"}}>  {event.event_location}</p></form>
                 <form class="form-inline">
                 <button
                 style={{
@@ -137,9 +135,9 @@ class Events extends Component{
                         }}
                     type='button'
                     className='btn'>
-                    <i className='fas fa-calendar-alt'></i>
+                   
             </button>
-            <p class="card-text"> {event.event_date}</p></form>
+            <p class="card-text" style ={{color:"white"}}> {event.event_date}</p></form>
                 <button onClick = {e=>this.submitEvents(e,event.event_id)} class="btn btn-primary">Register Event</button>
                 </div></div>
                 

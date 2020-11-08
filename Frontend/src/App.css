@@ -19,6 +19,36 @@
   border: 2px solid black;
 }
 
+.card{
+  width:20rem;
+  padding:10px;
+  border:"primary";
+  box-sizing: border-box;
+  margin:5px;
+}
+
+.card-image-top{
+  padding:10px;
+}
+
+.form-control{
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+  font-size: 10px;
+  border-top-left-radius: 5px 5px;
+
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+  background-color:white;
+  color:#1569e0;
+  border-radius:8px;
+}
+
 .login-form .form-group {
   margin-bottom:10px;
 }
