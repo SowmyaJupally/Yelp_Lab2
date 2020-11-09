@@ -31,7 +31,7 @@
   padding:10px;
 }
 
-.form-control{
+/* .form-control{
   float: left;
   display: block;
   color: black;
@@ -41,7 +41,7 @@
   font-size: 10px;
   border-top-left-radius: 5px 5px;
 
-}
+} */
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
   background-color:white;
