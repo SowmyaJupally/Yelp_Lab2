@@ -1,7 +1,7 @@
-# YelpApp-014547013
+# YelpApp
 Prototype of food Delivery App such as Yelp. Built using Node.JS, leveraging React, Redux for frontend and MySQL DB. 
 
-The System is designed using React JS and Node JS. In order to run the application, we need to install all the node dependencies. 
+The System is designed using React JS, Node JS, Redux, Kafka and Mongo DB. In order to run the application, we need to install all the node dependencies. 
 To do this, perform the following command in both Frontend and Backend
 npm install
 
