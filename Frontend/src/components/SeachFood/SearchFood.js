@@ -88,7 +88,7 @@ alert("Please fill Section Name Field!");
     this.props.searchFood(data);
 
          if(this.props.search==undefined){
-             alert("Nothing to Show!:(")
+             console.log("Nothing to Show!:(")
          }else{
             viewFlag=true;
             // alert(this.props.search)
