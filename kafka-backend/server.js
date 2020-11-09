@@ -61,7 +61,7 @@ async function handleTopicRequest(topic_name,fname){
                 }
             ];
 
-            console.log("payloads for sai2Topic");
+            console.log("payloads for response_topic");
             console.log(payloads);
             producer.send(payloads, function(err, data){
 
