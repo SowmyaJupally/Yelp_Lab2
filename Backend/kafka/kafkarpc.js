@@ -46,7 +46,7 @@ KafkaRPC.prototype.makeRequest = function(topic_name, content, callback){
         var payloads = [
             { topic: topic_name, messages: JSON.stringify({
                 correlationId:correlationId,
-                replyTo:'response_topic',
+                replyTo:'sai2Topic',
                 data:content}),
                 partition:0}
         ];
@@ -66,7 +66,7 @@ KafkaRPC.prototype.makeRequest = function(topic_name, content, callback){
 KafkaRPC.prototype.setupResponseQueue = async function(producer,topic_name, next){
     //don't mess around if we have a queue\
     self = this;
-    var consumer = await self.connection.getConsumer('response_topic');
+    var consumer = await self.connection.getConsumer('sai2Topic');
 
     if(this.response_queue) {
         console.log('jaffa inside if'+this.response_queue);
