@@ -8,6 +8,7 @@ npm install
 This will install the node modules in the system. To run the application, perform the following comands:
 
 In Frontend Directory : npm start
+
 In Backend Directory : node index.js
 
 The application is hosted on Amazon AWS.
